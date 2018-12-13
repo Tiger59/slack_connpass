@@ -2,7 +2,7 @@ import requests
 import json
 import slackweb
 def events_handler(event, context):
-    slack = slackweb.Slack(url="https://hooks.slack.com/services/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")
+    slack = slackweb.Slack(url="slackのwebhookURLに変更")
     url = 'https://connpass.com/api/v1/event/?keyword=神戸'
     events="*近々開催されるイベントです*\n"
     obj = json.loads(requests.get(url).text)
